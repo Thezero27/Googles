@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Angel Fabian">
+    <meta name="description" content="Diseño web Similar a Google">
+    <meta name="keywords" content="google, buscar, buscar con google, suerte, me siento con suerte">
+    <!--Título de Pestaña-->
+    <title>Google</title>
+    <!--Ícono de Pestaña-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Roboto:wght@300&display=swap" 
+    rel="stylesheet">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!--Encabezado - Menú-->
+    <header>
+        <nav>
+            <ul>
+                <!--Vínculos Gmail e Imágenes-->
+                <li><a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="vinculo">Gmail</a></li>
+                <li><a href="https://www.google.co.cr/imghp?hl=es-419&ogbl" class="vinculo">Imágenes</a></li>
+
+                <!--Botón para mostrar el panel de aplicaciones de Google-->
+                <li><button id="btn_apps"><img src="img/google-apps.png" alt="Google Apps"></button></li>
+
+                <!--Panel de "Google Apps"-->
+                <div id="google_panel">
+                    <!--Fila #1 con 3 aplicaciones-->
+                    <div class="fila_iconos">
+                        <a href="https://www.google.com/account/about/?hl=es">
+                            <img src="img/cuenta.png">
+                            Cuenta
+                        </a>
+                        <a href="https://www.google.co.cr/webhp">
+                            <img src="img/busqueda.png">
+                            Búsqueda
+                        </a>
+                        <a href="https://www.google.co.cr/maps?hl=es-419">
+                            <img src="img/maps.png">
+                            Maps
+                        </a>
+                    </div>
+
+                    <!--Fila #2 con 3 aplicaciones-->
+                    <div class="fila_iconos">
+                        <a href="https://www.youtube.com/?gl=CR">
+                            <img src="img/youtube.png">
+                            Youtube
+                        </a>
+                        <a href="https://play.google.com/store?hl=es-419">
+                            <img src="img/play.png">
+                            Play
+                        </a>
+                        <a href="https://news.google.com/topstories?hl=es-419&gl=US&ceid=US:es-419">
+                            <img src="img/noticias.png">
+                            Noticias
+                        </a>
+                    </div>
+
+                    <!--Fila #3 con 3 aplicaciones-->
+                    <div class="fila_iconos">
+                        <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                            <img src="img/gmail.png">
+                            Gmail
+                        </a>
+                        <a href="https://apps.google.com/meet/?hs=197">
+                            <img src="img/meet.png">
+                            Meet
+                        </a>
+                        <a href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2F&followup=https%3A%2F%2Fdrive.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                            <img src="img/drive.png">
+                            Drive
+                        </a>
+                    </div>
+
+                    <!--Fila #4 con 3 aplicaciones-->
+                    <div class="fila_iconos">
+                        <a href="https://translate.google.co.cr/?hl=es-419">
+                            <img src="img/traductor.png">
+                            Traductor
+                        </a>
+                        <a href="https://www.google.com/photos/about/">
+                            <img src="img/fotos.png">
+                            Fotos
+                        </a>
+                        <a href="https://duo.google.com/about/?usp=duo_ald">
+                            <img src="img/duo.png">
+                            Duo
+                        </a>
+                    </div>
+                </div> <!--Fin del Panel de "Google Apps"-->
+
+                <!--Botón Acceder a Google-->
+                <li><a href="https://accounts.google.com/signin/v2/identifier?hl=es-419&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn_acceder">Acceder</a></li>
+            </ul>
+        </nav>
+    </header> <!--Fin de Encabezado - Menú-->
+
+    <!--Contenido Principal - Buscador Google-->
+    <main>
+        <!--logotipo de Google-->
+        <div class="cont-letras">
+            <!--Letras de colores del logotipo-->
+            <span class="let-celeste">G</span>
+            <span class="let-roja">o</span>
+            <span class="let-amarilla">o</span>
+            <span class="let-celeste">g</span>
+            <span class="let-verde">l</span>
+            <span class="let-roja">e</span>
+        </div>
+
+        <!--Campo de texto-->
+        <input type="text" id="valor" title="Buscar">
+
+        <!--Botones Interactivos-->
+        <div class="cont-botones">
+            <button id="btn_buscar">Buscar con Google</button>
+            <button id="btn_con_suerte">Me siento con suerte</button>
+            <a id="download">Tomar screenshot y descargar</a>
+        </div>
+    </main> <!--Fin del Contenido Principal-->
+
+    <!--Pie de Página-->
+    <footer>
+        <!--Bloque Superior-->
+        <div id="bloque1">
+            <span>Diseñado por: Miguel Angel Fabian</span>
+        </div>
+
+        <!--Bloque Inferior-->
+        <div id="bloque2">
+            <!--Subdivisión 1-->
+            <div id="sub_bloque1">
+                <ul>
+                    <li><a href="https://about.google/?utm_source=google-CR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
+                    <li><a href="https://ads.google.com/intl/es-419_cr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a></li>
+                    <li><a href="https://smallbusiness.withgoogle.com/intl/es-419/help/#!/">Negocios</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></li>
+                </ul>
+            </div>
+
+            <!--Subdivisión 2-->
+            <div id="sub_bloque2">
+                <ul>
+                    <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>                 
+                </ul>
+            </div>
+        </div>
+    </footer> <!--Fin del Pie de Página-->
+    
+    <!--JavaScript-->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/*------DISEÑO PARA TABLETAS------*/
+@media screen and (max-width: 850px) {
+
+    /*-----1) CONTENIDO PRINCIPAL - BUSCADOR GOOGLE-----*/
+    main{width: 550px;}
+
+    /*---lOGOTIPO DE GOOGLE---*/
+
+    /*Diseño de las letras que conforman el logotipo*/
+    .cont-letras span{font-size: 100px;}
+
+    /*---CAMPO DE TEXTO - INPUT---*/
+
+    /*Diseño para el campo de texto*/
+    #valor{
+        width: 435px; height: 35px;
+        font-size: 15px; margin-bottom: 10px;
+    }
+
+    /*---BOTONES INTERACTIVOS---*/
+    .cont-botones{width: 100%; margin: 10px 0;}
+
+    /*Diseño para los botones*/
+    .cont-botones button{padding: 10px 15px;}
+
+    /*-----2) PIE DE PÁGINA-----*/
+    footer{height: 150px;}
+    
+    /*Estructura del bloque #2*/
+    #bloque2{flex-flow: column;}
+
+    /*---Bloque #2---*/
+    #sub_bloque1, #sub_bloque2{width: 100%;}
+    #sub_bloque1{margin-top: 50px;}
+    #sub_bloque2{margin-top: 20px;}
+
+    /*Acomodo y diseño de vínculos en ambos sub-bloques*/
+    #sub_bloque1 ul, #sub_bloque2 ul{justify-content: center;}    
+
+} /*Fin @media screen and (max-width: 850px)*/
+
+/*------DISEÑO PARA TELÉFONOS INTELIGENTES------*/
+@media screen and (max-width: 500px) {
+
+    /*-----1) ENCABEZADO - MENÚ-----*/
+    header{justify-content: center;}
+
+    /*Menú de Navegación - Vínculos*/
+    nav ul li a{margin: 0 8px;}
+
+    /*Botón "Google Apps"*/
+    #btn_apps{margin: 0 3px;}
+
+    /*---Panel Desplegable - Google Apps---*/
+    #google_panel{
+        padding: 4px; right: 2%;
+    }
+
+    /*Botón "Acceder"*/
+    .btn_acceder{padding: 10px 15px;}
+
+    /*-----2) CONTENIDO PRINCIPAL - BUSCADOR GOOGLE-----*/
+    main, .cont-letras{width: 100%;}
+
+    /*---lOGOTIPO DE GOOGLE---*/
+
+    /*Diseño de las letras que conforman el logotipo*/
+    .cont-letras span{
+        font-size: 70px; letter-spacing: -3px;
+    }
+
+    /*---CAMPO DE TEXTO - INPUT---*/
+
+    /*Diseño para el campo de texto*/
+    #valor{
+        width: 80%; height: 30px; 
+    }
+
+    /*---BOTONES INTERACTIVOS---*/
+
+    /*Contenedor de los botones*/
+    .cont-botones{
+        flex-flow: column; align-items: center;
+    }
+
+    /*Diseño para los botones*/
+    .cont-botones button{
+        margin: 5px 0; padding: 8px;
+    }
+    #btn_con_suerte{
+        margin-bottom: 30px; display: block;
+    }
+
+    /*-----3) PIE DE PÁGINA-----*/
+    footer{height: 50px;}
+
+    /*---Bloque #1---*/
+    #bloque1 span{text-align: center;}
+
+    /*Ocultar el Bloque #2*/
+    #bloque2{display: none;}
+
+} /*Fin @media screen and (max-width: 500px)*/

@@ -1,0 +1,205 @@
+/*-----1) RESET CSS-----*/
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+/*-----2) VARIABLES - ESTILOS GENERALES-----*/
+:root{
+    --col-celeste: #247cce;
+    --col-rojo: #e44537;
+    --col-amarillo: #fac819;
+    --col-verde: #289e55;
+    --col-gris: #c5c5c5;
+    --col-gris2: #f7f7f7;
+}
+body{
+    color: #2a2a2a; font-size: 14.50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-----3) ENCABEZADO - MENÚ-----*/
+header{
+    height: 100%; width: 100%; padding: 1%;
+    display: flex; justify-content: flex-end; 
+    margin-top: 10px;
+}
+
+/*Menú de Navegación - Vínculos*/
+nav{
+    padding: 0 1%; height: 100%;
+}
+nav ul{
+    list-style: none; display: flex; 
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none; margin: 0 15px; 
+    color: #000; user-select: none;
+}
+.vinculo:hover{
+    text-decoration: underline; 
+}
+
+/*Botón "Google Apps"*/
+#btn_apps{
+    margin: 0 10px; border: none;
+    padding: 8px; border-radius: 50%; 
+    cursor: pointer; background: transparent;
+}
+#btn_apps:hover, #btn_apps:focus{
+    box-shadow: 0px 0px 1px 1px var(--col-gris); outline: none;
+}
+
+/*---Panel Desplegable - Google Apps---*/
+#google_panel{
+    background: #fff; padding: 10px; 
+    border-radius: 5px; z-index: 1000;
+    box-shadow: 0px 0px 4px 1px var(--col-gris); 
+    position: absolute; top: 80px; right: 3.7%;
+    overflow-y: scroll; height: 280px; display: none;
+}
+.fila_iconos{
+    height: 70px; width: 100%; 
+    margin-bottom: 20px;
+}
+.fila_iconos a{
+    color: #000; text-decoration: none; padding: 5px;
+    margin: 0 5px; text-align: center; width: 80px; height: 80px; 
+    float: left; border-radius: 5px; display: block;
+}
+.fila_iconos a:hover, .fila_iconos a:focus{
+    box-shadow: 0px 0px 1px 1px var(--col-celeste); outline: none;
+}
+
+/*Barra de Scroll - Panel "Google Apps"*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background: #dadada; 
+    border-radius: 5px;
+}
+
+/*Botón "Acceder"*/
+.btn_acceder{
+    background: var(--col-celeste); color: #fff;
+    text-align: center; padding: 10px 25px;
+    border-radius: 4px; font-weight: 600;
+}
+.btn_acceder:hover, .btn_acceder:focus{
+    opacity: .8; outline: none;
+}
+
+/*-----4) CONTENIDO PRINCIPAL - BUSCADOR GOOGLE-----*/
+main{
+    height: 100%; width: 650px; 
+    margin: 20px auto; padding: 5px 0; 
+}
+
+/*---lOGOTIPO DE GOOGLE---*/
+
+/*Contenedor del logotipo de Google*/
+.cont-letras{
+    display: flex; justify-content: center; 
+    margin: auto; user-select: none; width: 80%; 
+}
+
+/*Diseño de las letras que conforman el logotipo*/
+.cont-letras span{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 110px; letter-spacing: -5px;
+}
+
+/*Generar colores para cada letra*/
+.cont-letras .let-celeste{color: var(--col-celeste);}
+.cont-letras .let-roja{color: var(--col-rojo);}
+.cont-letras .let-amarilla{color: var(--col-amarillo);}
+.cont-letras .let-verde{color: var(--col-verde);}
+
+/*---CAMPO DE TEXTO - INPUT---*/
+
+/*Diseño para el campo de texto*/
+#valor{
+    width: 520px; height: 40px; 
+    margin: 5px 0 30px 10%; 
+    outline: none; padding: 0 6%;
+    border: 1px solid var(--col-gris);
+    border-radius: 40px; font-size: 16px; 
+}
+
+/*Efectos para el campo de texto*/
+#valor:hover, #valor:focus{
+    box-shadow: 0px 0px 4px 1px var(--col-gris); border: none;
+}
+
+/*---BOTONES INTERACTIVOS---*/
+
+/*Contenedor de los botones*/
+.cont-botones{
+    display: flex; justify-content: space-evenly;
+    width: 80%; margin: 5px 0 30px 10%; 
+}
+
+/*Diseño para los botones*/
+.cont-botones button{
+    padding: 10px 18px; font-size: 14px;
+    margin: 0 -80px; border: none; user-select: none;
+    border-radius: 5px; background: var(--col-gris2);
+    cursor: pointer; color: #353535; outline: none;
+}
+
+/*Efecto para los botones al posar el mouse encima*/
+.cont-botones button:hover{
+    box-shadow: 0px 0px 1px 1px var(--col-gris);
+}
+
+/*Efecto de focus para los botones*/
+.cont-botones button:focus{
+    box-shadow: 0px 0px 1px 1px var(--col-celeste);
+}
+
+/*-----5) PIE DE PÁGINA-----*/
+footer{
+    width: 100%; height: 100px;
+    background: var(--col-gris2);  
+    position: fixed; bottom: 0;
+}
+
+/*Estructura de los bloques*/
+#bloque1, #bloque2{
+    height: 50px; padding: 15px 30px;
+}
+#bloque1{
+    border-bottom: 1px solid var(--col-gris);
+}
+#bloque2{
+    display: flex; justify-content: space-evenly;
+}
+
+/*---Bloque 1---*/
+#bloque1 span{
+    color: #505050; display: block; 
+}
+
+/*---Bloque 2---*/
+#sub_bloque1, #sub_bloque2{
+    height: 50px;
+}
+#sub_bloque1{
+    width: 650px; 
+}
+#sub_bloque2{
+    width: 350px; 
+}
+
+/*Acomodo y diseño de vínculos en ambos sub-bloques*/
+#sub_bloque1 ul, #sub_bloque2 ul{list-style: none; display: flex;}
+#sub_bloque1 ul li a, #sub_bloque2 ul li a{
+    text-decoration: none; color: #505050; margin: 0 14px;
+}
+
+/*Efecto para los vínculos en ambos sub-bloques*/
+#sub_bloque1 ul li a:hover, #sub_bloque2 ul li a:hover{
+    text-decoration: underline;
+}
